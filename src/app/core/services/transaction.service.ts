@@ -1,0 +1,17 @@
+import { Injectable } from '@angular/core';
+import { Transaction } from 'src/app/models/transaction.modal'; 
+
+@Injectable({
+  providedIn: 'root'
+})
+export class TransactionService {
+
+  getTransactions(): Transaction[] {
+    return [
+      { id: 1, date: '2026-03-01', amount: 5000, category: 'Salary', type: 'income' },
+      { id: 2, date: '2026-03-02', amount: 200, category: 'Food', type: 'expense' },
+      { id: 3, date: '2026-03-03', amount: 1000, category: 'Shopping', type: 'expense' },
+      { id: 4, date: '2026-03-04', amount: 3000, category: 'Freelance', type: 'income' }
+    ];
+  }
+}

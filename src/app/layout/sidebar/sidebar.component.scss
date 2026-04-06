@@ -1,0 +1,49 @@
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+}
+.close-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .close-btn {
+    display: block;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 10px 0;
+    cursor: pointer;
+
+    &:hover {
+      color: #38bdf8;
+    }
+  }
+}

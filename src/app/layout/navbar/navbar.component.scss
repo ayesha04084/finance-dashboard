@@ -1,0 +1,35 @@
+.navbar {
+  background: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.right select {
+  padding: 5px 10px;
+}
+.menu-btn {
+  display: none;
+  margin-right: 10px;
+}
+.theme-btn {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #e2e8f0;
+}
+
+body.dark .theme-btn {
+  background: #334155;
+  color: white;
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    display: inline-block;
+  }
+}

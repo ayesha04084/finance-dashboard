@@ -1,0 +1,19 @@
+<div class="dashboard">
+
+  <div class="cards">
+    <app-card title="Total Balance" [value]="totalBalance"></app-card>
+    <app-card title="Income" [value]="income"></app-card>
+    <app-card title="Expenses" [value]="expense"></app-card>
+  </div>
+
+  <div class="charts">
+    <div class="chart-box">
+      <canvas id="lineChart"></canvas>
+    </div>
+
+    <div class="chart-box">
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+
+</div>

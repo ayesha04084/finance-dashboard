@@ -1,0 +1,11 @@
+<div class="sidebar" [class.open]="isOpen">
+  <div>
+  <div class="close-btn" (click)="closeSidebar()">✕</div>
+  <h2 class="logo">Finance</h2> 
+  </div>
+  <ul>
+    <li routerLink="/" (click)="closeSidebar()">Dashboard</li>
+    <li routerLink="/transactions" (click)="closeSidebar()">Transactions</li>
+    <li routerLink="/insights" (click)="closeSidebar()">Insights</li>
+  </ul>
+</div>
